@@ -1,7 +1,7 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Puesto</th>
+      <th scope="col">#</th>
       <th scope="col">Club</th>
       <th scope="col">PJ</th>
       <th scope="col">G</th>
