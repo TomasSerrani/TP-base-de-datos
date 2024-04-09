@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier League</title>
+<style>
+  body{
+    background-color: #333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    max-width: 30px;
+    height: auto;
+    margin-right: 10px;
+    }
+  h3{
+      color: lightblue;
+      display: inline;;
+      margin-right: 10px;
+    }  
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      color: black;
+    }
+  th, td {
+      border: 1px solid ‎ ;
+      border-bottom: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  th {
+     background-color: white;
+    }
+  tr:nth-child(::-webkit-meter-even-less-good-value){
+    background-color: #f2f2f2;
+  }
+  .azul {
+     border-left: 5px solid blue;
+    }
+   .naranja {
+     border-left: 5px solid chocolate;
+    }
+   .rojo {
+     border-left: 5px solid crimson;
+    }
+   tr:not(.azul):not(.naranja):not(.rojo) {
+     border-left: 5px solid black;
+    }
+   .equipo{
+    vertical-align: middle;
+   }
+   .legend{
+    margin-top: 20px;
+    display: flex;
+   }
+   title{
+    font-size: 1.2em;
+    font-weight: bold;
+   }
+   .legend{
+    margin-right: 10px;
+   }
+   .blue{
+    color: blue;
+   }
+   .orange{
+    color: chocolate;
+   }
+   .red{
+    color: crimson;
+   }
+</style>
+</head>
+<body>
+  <div class="header">
+    <img src="descarga.png" alt="Logo de la Liga" class="logo">
+    <h2>Premier League</h2>
+  </div>
+<h3>Temporada 2023-24</h3>
+
+<table>
+  <tr class="black">
+    <th>#</th>
+    <th>Club</th>
+    <th>PJ</th>
+    <th>G</th>
+    <th>E</th>
+    <th>P</th>
+    <th>GF</th>
+    <th>GC</th>
+    <th>DG</th>
+    <th>Pts</th>
+    <th>Últimos 5</th>
+  </tr>
+  <tr class="azul">
+    <td>1</td>
+    <td><img src="arsenal.png" alt="Escudo equipo 1" class="logo">Arsenal</td>
+    <td>31</td>
+    <td>22</td>
+    <td>5</td>
+    <td>4</td>
+    <td>75</td>
+    <td>24</td>
+    <td>51</td>
+    <td>71</td>
+    <td>✅ ✅ ─ ✅ ✅</td>
+  </tr>
+  <tr class="azul">
+    <td>2</td>
+    <td><img src="liverpool.png" alt="Escudo equipo 2" class="logo">Liverpool</td>
+    <td>31</td>
+    <td>21</td>
+    <td>8</td>
+    <td>2</td>
+    <td>72</td>
+    <td>30</td>
+    <td>42</td>
+    <td>71</td>
+    <td>─ ✅ ✅ ─ ✅</td>
+  </tr>
+  <tr class="azul">
+    <th scope="row">3</th>
+    <td><img src="man city.png" alt="Escudo equipo 3" class="logo">Manchester City</td>
+    <td>31</td>
+    <td>21</td>
+    <td>7</td>
+    <td>3</td>
+    <td>71</td>
+    <td>31</td>
+    <td>40</td>
+    <td>70</td>
+    <td>✅ ✅ ─ ─ ✅</td>
+  </tr>
+  <tr class="azul">
+    <th scope="row">4</th>
+    <td><img src="tottenham.png" alt="Escudo equipo 4" class="logo">Tottenham</td>
+    <td>31</td>
+    <td>18</td>
+    <td>6</td>
+    <td>7</td>
+    <td>65</td>
+    <td>45</td>
+    <td>20</td>
+    <td>60</td>
+    <td>✅ ─ ✅ ❎ ✅</td>
+  </tr>
+  <tr class="naranja">
+    <th scope="row">5</th>
+    <td><img src="aston villa.png" alt="Escudo equipo 5" class="logo">Aston Villa</td>
+    <td>32</td>
+    <td>18</td>
+    <td>6</td>
+    <td>8</td>
+    <td>66</td>
+    <td>49</td>
+    <td>17</td>
+    <td>60</td>
+    <td>─ ❎ ✅ ─ ❎</td>
+  </tr>
+  <tr>
+    <th scope="row">6</th>
+    <td><img src="man united.png" alt="Escudo equipo 6" class="logo">Manchester United</td>
+    <td>31</td>
+    <td>15</td>
+    <td>4</td>
+    <td>12</td>
+    <td>45</td>
+    <td>46</td>
+    <td>-1</td>
+    <td>49</td>
+    <td>─ ❎ ─ ✅ ❎</td>
+  </tr>
+  <tr>
+    <th scope="row">7</th>
+    <td><img src="west ham.png" alt="Escudo equipo 7" class="logo">West Ham</td>
+    <td>32</td>
+    <td>13</td>
+    <td>9</td>
+    <td>10</td>
+    <td>52</td>
+    <td>56</td>
+    <td>-4</td>
+    <td>48</td>
+    <td>✅ ─ ❎ ─ ─</td>
+  </tr>
+  <tr>
+    <th scope="row">8</th>
+    <td><img src="newcastle.png" alt="Escudo equipo 8" class="logo">Newcastle</td>
+    <td>31</td>
+    <td>14</td>
+    <td>5</td>
+    <td>12</td>
+    <td>65</td>
+    <td>52</td>
+    <td>13</td>
+    <td>47</td>
+    <td>✅ ─ ✅ ❎ ✅</td>
+  </tr>
+  <tr>
+    <th scope="row">9</th>
+    <td><img src="chelsea.png" alt="Escudo equipo 9" class="logo">Chelsea</td>
+    <td>30</td>
+    <td>12</td>
+    <td>8</td>
+    <td>10</td>
+    <td>55</td>
+    <td>52</td>
+    <td>3</td>
+    <td>44</td>
+    <td>─ ✅ ─ ✅ ─</td>
+  </tr>
+  <tr>
+    <th scope="row">10</th>
+    <td><img src="brighton.png" alt="Escudo equipo 10" class="logo">Brighton</td>
+    <td>31</td>
+    <td>11</td>
+    <td>10</td>
+    <td>10</td>
+    <td>51</td>
+    <td>49</td>
+    <td>2</td>
+    <td>43</td>
+    <td>❎ ─ ❎ ✅ ❎</td>
+  </tr>
+  <tr>
+    <th scope="row">11</th>
+    <td><img src="wolves.png" alt="Escudo equipo 11" class="logo">Wolves</td>
+    <td>31</td>
+    <td>12</td>
+    <td>6</td>
+    <td>13</td>
+    <td>44</td>
+    <td>49</td>
+    <td>-5</td>
+    <td>42</td>
+    <td>❎ ─ ❎ ✅ ❎</td>
+  </tr>
+  <tr>
+    <th scope="row">12</th>
+    <td><img src="bournemouth.png" alt="Escudo equipo 12" class="logo">Bournemouth</td>
+    <td>31</td>
+    <td>11</td>
+    <td>8</td>
+    <td>12</td>
+    <td>45</td>
+    <td>55</td>
+    <td>-10</td>
+    <td>41</td>
+    <td>❎ ✅ ✅ ✅ ─</td>
+  </tr>
+  <tr>
+    <th scope="row">13</th>
+    <td><img src="fulham.png" alt="Escudo equipo 13" class="logo">Fulham</td>
+    <td>32</td>
+    <td>11</td>
+    <td>6</td>
+    <td>15</td>
+    <td>47</td>
+    <td>51</td>
+    <td>-4</td>
+    <td>39</td>
+    <td>❎ ❎ ─ ✅ ❎</td>
+  </tr>
+  <tr>
+    <th scope="row">14</th>
+    <td><img src="crystal palace.png" alt="Escudo equipo 14" class="logo">Crystal Palace</td>
+    <td>31</td>
+    <td>7</td>
+    <td>9</td>
+    <td>15</td>
+    <td>36</td>
+    <td>54</td>
+    <td>-18</td>
+    <td>30</td>
+    <td>❎ ❎ ─ ─ ❎</td>
+  </tr>
+  <tr>
+    <th scope="row">15</th>
+    <td><img src="brentford.png" alt="Escudo equipo 15" class="logo">Brentford</td>
+    <td>32</td>
+    <td>7</td>
+    <td>8</td>
+    <td>17</td>
+    <td>45</td>
+    <td>65</td>
+    <td>-20</td>
+    <td>25</td>
+    <td>─ ─ ─ ❎ ❎</td>
+  </tr>
+  <tr>
+    <th scope="row">16</th>
+    <td><img src="everton.png" alt="Escudo equipo 16" class="logo">Everton</td>
+    <td>31</td>
+    <td>9</td>
+    <td>8</td>
+    <td>14</td>
+    <td>32</td>
+    <td>42</td>
+    <td>-10</td>
+    <td>27</td>
+    <td>✅ ─ ❎ ❎ ❎</td>
+  </tr>
+  <tr>
+    <th scope="row">17</th>
+    <td><img src="nottingham forest.png" alt="Escudo equipo 17" class="logo">Nottingham Forest</td>
+    <td>32</td>
+    <td>7</td>
+    <td>8</td>
+    <td>17</td>
+    <td>40</td>
+    <td>56</td>
+    <td>-16</td>
+    <td>25</td>
+    <td>❎ ✅ ─ ─ ❎</td>
+  </tr>
+  <tr class="rojo">
+    <th scope="row">18</th>
+    <td><img src="luton.png" alt="Escudo equipo 18" class="logo">Luton</td>
+    <td>32</td>
+    <td>6</td>
+    <td>7</td>
+    <td>19</td>
+    <td>45</td>
+    <td>65</td>
+    <td>-20</td>
+    <td>25</td>
+    <td>✅ ❎ ❎ ─ ❎</td>
+  </tr>
+  <tr class="rojo">
+    <th scope="row">19</th>
+    <td><img src="burnley.png" alt="Escudo equipo 19" class="logo">Burnley</td>
+    <td>32</td>
+    <td>4</td>
+    <td>7</td>
+    <td>21</td>
+    <td>32</td>
+    <td>67</td>
+    <td>-35</td>
+    <td>19</td>
+    <td>❎ ─ ─ ✅ ─</td>
+  </tr>
+  <tr class="rojo">
+    <th scope="row">20</th>
+    <td><img src="sheffield united.png" alt="Escudo equipo 20" class="logo">Sheffield United</td>
+    <td>31</td>
+    <td>3</td>
+    <td>7</td>
+    <td>21</td>
+    <td>30</td>
+    <td>82</td>
+    <td>-52</td>
+    <td>16</td>
+    <td>─ ❎ ─ ─ ✅</td>
+  </tr>
+</table>
+<div class="legend">
+  <div class="title">Ascenso/Descenso:
+  <span class="blue">Cupo para Champions League</span>
+  <span class="orange">Cupo para Europa League</span>
+  <span class="red">Descenso</span>
+  </div>
+</div>
+<div class="legend">
+  <div class="title">Últimos 5 partidos:
+  <span class="">✅: Ganó</span>
+  <span class="">─: Empató</span>
+  <span class="">❎: Perdió</span>
+  </div>
+</div>
+</body>
+</html>
