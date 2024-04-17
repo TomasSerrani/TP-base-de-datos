@@ -1,20 +1,41 @@
-const solicitarAPI = async() =>{
+const solicitarAPI = async () => {
     var myHeaders = new Headers();
-    myHeaders.append("x-rapidapi-key", "5d5e97c9a9a65b2a8c73afbc83740841");
-    myHeaders.append("x-rapidapi-host", "v3.football.api-sports.io");
-
+    myHeaders.append("x-apisports-key", "74b2e353eafe98d4647e88577a1285fd");
     var requestOptions = {
-    method: 'GET',
-    headers: myHeaders,
-    redirect: 'follow'
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
     };
     try {
-        const respuesta= await fetch("https://v3.football.api-sports.io/leagues", requestOptions);
-        console.log(respuesta);
-        const datos= await respuesta.json;
-        console.log(datos);
-    }catch(error){
+        const statusResponse = await fetch("https://v3.football.api-sports.io/status", requestOptions);
+        const statusData = await statusResponse.json();
+        console.log("Status:", statusData);
+
+        const standingsResponse = await fetch("https://v3.football.api-sports.io/standings?league=39&season=2023", requestOptions);
+        const standingsData = await standingsResponse.json();
+        
+        let content = "";
+        standingsData.response[0].league.standings[0].forEach((team, index) => {
+            content += `
+             <tr>
+                <td>${index + 1}</td>
+                <td><img src="${team.team.logo}" alt="${team.team.name}" style="width: 50px;"> ${team.team.name}</td>
+                <td>${team.all.played}</td>
+                <td>${team.all.win}</td>
+                <td>${team.all.draw}</td>
+                <td>${team.all.lose}</td>
+                <td>${team.all.goals.for}</td>
+                <td>${team.all.goals.against}</td>
+                <td>${team.all.goals.for- team.all.goals.against}</td>
+                <td>${team.points}</td>
+             </tr>`;
+        });
+        const tableBody_standings = document.getElementById("tableBody_standings");
+        tableBody_standings.innerHTML = content;
+    } catch (error) {
         console.log(error);
     }
 }
-solicitarAPI();
+window.addEventListener("load", async () => {
+    await solicitarAPI();
+});
