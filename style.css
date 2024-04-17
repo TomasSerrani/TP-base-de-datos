@@ -1,10 +1,59 @@
 body {
-    background: #d3cce3; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e9e4f0, #d3cce3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: black; /* Cambia el color de fondo de la página a negro */
+    color: white; /* Cambia el color del texto en la página a blanco */
 }
 
-.centered {
-    text-align: center !important;
-    vertical-align: middle !important;
+#header {
+    background-color: #5b00a6;
+    padding: 20px;
+    text-align: left; /* Ajusta el texto a la izquierda */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+#header h1 {
+    margin: 0;
+    margin-left: 10px; /* Agrega un margen a la izquierda del título */
+    color: black; /* Cambia el color del título a negro */
+}
+
+#header img {
+    width: 150px; /* Tamaño del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Agrega un margen a la derecha del logo */
+}
+
+.main-container {
+    background-color: black; /* Cambia el color de fondo de la sección principal a negro */
+    padding: 20px;
+}
+
+/* En el archivo style.css */
+
+#datatable_standings {
+    background-color: #808080; /* Cambia el color de fondo de la tabla a gris */
+    color: white; /* Cambia el color del texto dentro de la tabla a blanco */
+}
+
+#datatable_standings th,
+#datatable_standings td {
+    text-align: center; /* Alinea el texto de las celdas al centro */
+    vertical-align: middle; /* Alinea el contenido verticalmente al centro */
+    color: white; /* Cambia el color del texto en las celdas a blanco */
+}
+
+.team-name img {
+    width: 30px; /* Ajusta el tamaño del logo */
+    height: auto; /* Altura automática */
+    vertical-align: middle; /* Alinea verticalmente */
+    margin-right: 10px; /* Espacio a la derecha del logo */
+}
+
+.team-name {
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente */
+}
+
+#header h1 {
+    color: black; /* Cambia el color del título a negro */
 }
