@@ -6,54 +6,54 @@ body {
 #header {
     background-color: #5b00a6;
     padding: 20px;
-    text-align: left; /* Ajusta el texto a la izquierda */
+    text-align: left; 
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
+    align-items: center; 
 }
 
 #header h1 {
     margin: 0;
-    margin-left: 10px; /* Agrega un margen a la izquierda del título */
-    color: black; /* Cambia el color del título a negro */
+    margin-left: 10px; 
+    color: black; 
 }
 
 #header img {
-    width: 150px; /* Tamaño del logo */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin-right: 10px; /* Agrega un margen a la derecha del logo */
+    width: 150px; 
+    height: auto; 
+    margin-right: 10px; 
 }
 
 .main-container {
-    background-color: black; /* Cambia el color de fondo de la sección principal a negro */
+    background-color: black; 
     padding: 20px;
 }
 
-/* En el archivo style.css */
+
 
 #datatable_standings {
-    background-color: #808080; /* Cambia el color de fondo de la tabla a gris */
-    color: white; /* Cambia el color del texto dentro de la tabla a blanco */
+    background-color: #808080; 
+    color: white; 
 }
 
 #datatable_standings th,
 #datatable_standings td {
-    text-align: center; /* Alinea el texto de las celdas al centro */
-    vertical-align: middle; /* Alinea el contenido verticalmente al centro */
-    color: white; /* Cambia el color del texto en las celdas a blanco */
+    text-align: center; 
+    vertical-align: middle; 
+    color: white;
 }
 
 .team-name img {
-    width: 30px; /* Ajusta el tamaño del logo */
-    height: auto; /* Altura automática */
-    vertical-align: middle; /* Alinea verticalmente */
-    margin-right: 10px; /* Espacio a la derecha del logo */
+    width: 30px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-right: 10px; 
 }
 
 .team-name {
-    display: flex; /* Usa flexbox para alinear elementos */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    align-items: center; 
 }
 
 #header h1 {
-    color: black; /* Cambia el color del título a negro */
+    color: black; 
 }
