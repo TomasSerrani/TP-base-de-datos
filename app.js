@@ -11,7 +11,7 @@ const solicitarAPI = async () => {
         const statusData = await statusResponse.json();
         console.log("Status:", statusData);
 
-        const standingsResponse = await fetch("https://v3.football.api-sports.io/standings?league=39&season=2023", requestOptions);
+        const standingsResponse = await fetch("https://v3.football.api-sports.io/standings?league=39&season=2024", requestOptions);
         const standingsData = await standingsResponse.json();
         
         let content = "";
@@ -32,6 +32,13 @@ const solicitarAPI = async () => {
         });
         const tableBody_standings = document.getElementById("tableBody_standings");
         tableBody_standings.innerHTML = content;
+        $(document).ready(function () {
+    const table = $('#datatable_standings').DataTable();
+
+    $('#searchInput').on('keyup', function () {
+        table.search(this.value).draw();
+    });
+});
     } catch (error) {
         console.log(error);
     }
