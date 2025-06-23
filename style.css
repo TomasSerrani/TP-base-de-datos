@@ -89,3 +89,61 @@ td img {
 .premier-logo:hover {
     transform: scale(1.05);
 }
+    background-color: black; /* Cambia el color de fondo de la página a negro */
+    color: white; /* Cambia el color del texto en la página a blanco */
+}
+
+#header {
+    background-color: #5b00a6;
+    padding: 20px;
+    text-align: left; 
+    display: flex;
+    align-items: center; 
+}
+
+#header h1 {
+    margin: 0;
+    margin-left: 10px; 
+    color: black; 
+}
+
+#header img {
+    width: 150px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.main-container {
+    background-color: black; 
+    padding: 20px;
+}
+
+
+
+#datatable_standings {
+    background-color: #808080; 
+    color: white; 
+}
+
+#datatable_standings th,
+#datatable_standings td {
+    text-align: center; 
+    vertical-align: middle; 
+    color: white;
+}
+
+.team-name img {
+    width: 30px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+.team-name {
+    display: flex; 
+    align-items: center; 
+}
+
+#header h1 {
+    color: black; 
+}
