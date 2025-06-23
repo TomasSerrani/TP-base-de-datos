@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,13 +27,41 @@
          alt="Premier League Logo" 
          class="premier-logo">
 </div>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTables.js</title>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- DataTable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
+   
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="header">
+        <img src="logo.svg" alt="Logo de la Liga Inglesa de Fútbol">
+        <h1>PREMIER LEAGUE</h1>
+    </div>
+    <div class="main-container">
+>>>>>>> 561f59c8b4c4264a2a1c4571d369cf6c55670b43
         <div class="container my-4">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <table id="datatable_standings" class="table table-striped">
                         <thead>
                             <tr>
-                                <th class="centered">#</th>
+                                <th class="centered">Posición</th>
                                 <th class="centered">Equipo</th>
                                 <th class="centered">PJ</th>
                                 <th class="centered">G</th>
@@ -44,19 +73,34 @@
                                 <th class="centered">Pts</th>
                             </tr>
                         </thead>
-                        <tbody id="tableBody_standings"></tbody>
+                        <tbody id="tableBody_standings">
+                            <tr>
+                                <td class="centered">1</td>
+                                <td class="team-name"><img src="team1_logo.svg" alt="Logo del equipo 1"> Liverpool</td>
+                                <td class="centered">38</td>
+                                <td class="centered">32</td>
+                                <td class="centered">3</td>
+                                <td class="centered">3</td>
+                                <td class="centered">85</td>
+                                <td class="centered">33</td>
+                                <td class="centered">52</td>
+                                <td class="centered">99</td>
+                            </tr>
+                            
+                        </tbody>
                     </table>
                 </div>
             </div>
         </div>
-        <!-- Bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <!-- jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!-- DataTable -->
-        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-        <!-- Custom JS -->
-        <script src="app.js"></script>
-    </body>
+    </div>
+    <!-- Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- DataTable -->
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
 </html>
